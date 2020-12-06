@@ -1,6 +1,6 @@
 # Settings
-baseurl = "https://nodidilu.github.io"
-languageCode = "en-us"
+baseurl = "https://nodidilu.github.io/"
+languageCode = "it"
 title = "Nodi di Lu"
 theme = "autophugo"
 #googleAnalytics = ""
