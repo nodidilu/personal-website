@@ -1,5 +1,5 @@
 # Settings
-baseurl = "http://nodidilu.github.io"
+baseurl = "https://nodidilu.github.io"
 languageCode = "en-us"
 title = "Nodi di Lu"
 theme = "autophugo"
