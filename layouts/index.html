@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{{ .Params.Title | default "Nodi di Lu" }}</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<link rel="icon" href="/img/favicon.ico">
+    <link rel="stylesheet" href="{{ "assets/css/main.css" | absURL }}"/>
+    <noscript><link rel="stylesheet" href="{{ "assets/css/noscript.css" | absURL }}"/></noscript>
+    <style>
+        :root{--site-background : url("{{ .Params.background | default "img/bg.jpg" | absURL }}")};
+    </style> 
+    <!-- Include the script that enables Netlify Identity on this page. -->
+    <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+</head>
+
+
+<body class>
+
+    <!-- Wrapper -->
+        <div id="wrapper">
+
+            <!-- Header -->
+                <header id="header">
+				<div class="logo">
+					<a href="/"><img class="icon" src="img/logo.png" alt="Home"></a>
+				</div>
+				<div class="content">
+					<div class="inner">
+						<h1>{{ .Title | default "Title" }}</h1>
+						{{ if .Params.description }}
+						<p>
+							{{ .Params.description }}
+						</p>
+						{{ end }}
+					</div>
+				</div>
+				<nav>
+					<ul>
+						{{ range .Pages.ByDate }}
+							{{if .Title }}
+								{{if .Content}}
+									<li>
+										<a href="#{{ cond (in (.Title|urlize) "%") (.Title | base64Encode) (.Title) | urlize }}">{{ .Title }}</a>
+									</li>
+								{{ else }}
+									<li><a href="{{ .Permalink }}">{{ "entra" }}</a></li>
+								{{ end }}
+							{{ end }}
+						{{ end }}
+					</ul>
+				</nav>
+			</header>
+
+
+
+				{{ partial "design.html" .}}
+				
+        </div>
+
+    <!-- BG -->
+    <div id="bg"></div>
+
+</body>
