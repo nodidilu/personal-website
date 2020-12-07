@@ -5,7 +5,7 @@ title = "Nodi di Lu"
 theme = "autophugo"
 #googleAnalytics = ""
 disableKinds = ["taxonomy", "taxonomyTerm"]
-
+custom = "/img/logo_segno_artigiano.ico"
 
 [Author]
     name = "Luciana Angeloni"
@@ -32,26 +32,23 @@ disableKinds = ["taxonomy", "taxonomyTerm"]
     url = "#footer"
     icon = "fa-info-circle"  
 
-    
-	
-	
     # Footer panel
     
     [params.footer.paragraph]
     headline = "Chi sono"
-    text = "Mi chiamo Luciana, vivo in Valle Camonica (la valle dei segni) e realizzo creazioni artigianali in pizzo chiacchierino e pizzo al tombolo. Lo stile dei miei lavori si muove tra il classico e l'attuale, con alcune possibili contaminazioni alle quali talvolta non riesco a resistere."
+    text = "Mi chiamo Luciana, vivo in Valle Camonica (la valle dei segni) e realizzo creazioni artigianali in pizzo chiacchierino e pizzo al tombolo. Lo stile dei miei lavori si muove tra il classico e l'attuale, con alcune possibili contaminazioni alle quali talvolta non riesco a resistere. [Segno Artigiano](http://www.segnoartigiano.it/86-luciana-angeloni)"
     
     [params.footer.social]
     headline = "Social"
 
     [[params.footer.social.links]]
     label = "Facebook"
-    url = "#"
+    url = "https://www.facebook.com/NODIDILU/"
     icon = "fa-facebook"
 
     [[params.footer.social.links]]
     label = "Instagram"
-    url = "#"
+    url = "https://www.instagram.com/lucianaangeloni_nodi_di_lu/"
     icon = "fa-instagram"
 
 

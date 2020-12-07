@@ -10,7 +10,7 @@
                     <h2>{{ with .Site.Params.footer.social.headline }}{{ . | markdownify }}{{ end }}</h2>
                     <ul class="icons">
                     {{ range .Site.Params.footer.social.links }}
-                        <li><a href="{{ .url }}" class="icon {{ .icon }}"><span class="label">{{ .label }}</span></a></li>
+                        <li><a href="{{ .url }}" class="icon {{ .icon }}" src="../img/favicon.ico"><span class="label">{{ .label }}</span></a></li>
                     {{ end }}
                     </ul>
                 </section>
